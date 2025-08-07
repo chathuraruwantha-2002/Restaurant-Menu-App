@@ -1,0 +1,27 @@
+MaterialApp
+└── HomeScreen
+    ├── AppBar
+    ├── Column
+    │   ├── CategoryList (Horizontal ScrollView)
+    │   │   └── CategoryCard (Custom Widget)
+    │   │       ├── Container
+    │   │       ├── Icon
+    │   │       └── Text
+    │   └── FoodGrid (GridView)
+    │       └── FoodCard (Custom Widget)
+    │           ├── Card
+    │           │   ├── Image
+    │           │   ├── Text (Name)
+    │           │   ├── Text (Price)
+    │           │   └── RatingStars (Custom Widget)
+    │           │       └── Row of Star Icons
+    │           └── GestureDetector → Navigator.push
+    │               └── FoodDetailScreen
+    │                   ├── AppBar
+    │                   ├── SingleChildScrollView
+    │                   │   ├── Hero (Image Animation)
+    │                   │   ├── Text (Name)
+    │                   │   ├── RatingStars
+    │                   │   ├── Text (Price)
+    │                   │   ├── Text (Description)
+    │                   │   └── ElevatedButton (Order)
